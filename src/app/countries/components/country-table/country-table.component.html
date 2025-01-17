@@ -29,7 +29,7 @@ No hay paises que mostrar
         <td>{{ country.capital}}</td>
         <td>{{ country.population | number }}</td>
         <td>
-          <a href="#">ver mas</a>
+          <a [routerLink]="['/countries/by', country.cca3]">ver mas</a>
         </td>
 
       </tr>
