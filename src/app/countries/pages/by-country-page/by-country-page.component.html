@@ -1,12 +1,13 @@
 
-<h2>por capital</h2>
+<h2>por Pais</h2>
 <hr>
 
 <div class="row">
   <div class="col">
   <!-- searchbox -->
    <shared-search-box
-   (onValue)="searchByCountry($event)"
+   (onDebounce)="searchByCountry($event)"
+   [initialValue]="initialValue"
    placeholder="Buscar por pais"></shared-search-box>
 
   </div>
